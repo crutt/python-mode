@@ -69,9 +69,9 @@ if sys.version_info < (3, 0):
 else:
     from io import FileIO, BytesIO, StringIO
     try:
-        from imp import reload
-    except ImportError:
         from importlib import reload
+    except ImportError:
+        from imp import reload
 
 from logilab.common.deprecation import deprecated
 
